@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title> AI Recipe Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Recipe Generator</h1>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form id="recipe-generator">
+                    <input type="text" placeholder="Enter a protein to start get a recipe" autofocus required
+                        class="instructions" autocomplete="off" id="user-instructions" />
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">i.e: Chicken, Fish, or Beef/div>
+                </div>
+                <div class="recipe hidden" id="recipe">
+                </div>
+
+        </main>
+
+        <footer> This AI project was coded by <a href="https://github.com/whitl33" target="_blank">Whitney Lee</a> and
+            is on
+            <a href="" target="_blank">github</a> and is hosted
+            on
+            <a href="" target="_blank">Netlify</a>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
